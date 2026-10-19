@@ -1,13 +1,64 @@
-# Operating System Files
+# ====================================================================
+# Android Studio & Gradle Production .gitignore
+# ====================================================================
+
+# Built application packages and bundles
+*.apk
+*.ap_
+*.aab
+*.dex
+
+# Gradle build cache & intermediate artifacts
+.gradle/
+build/
+*/build/
+captures/
+
+# Local configuration & environment secrets (Never commit these!)
+local.properties
+keystore.properties
+*.env
+
+# Keystores and cryptographic signing credentials
+*.jks
+*.keystore
+*.key
+*.p12
+*.pem
+
+# Android Studio & IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.navigation/
+
+# Keep standard code style settings if shared across team
+!.idea/codeStyles/
+
+# NDK and Native C/C++ compilation caches (if applicable)
+.cxx/
+*.cxx
+.externalNativeBuild/
+obj/
+
+# Android profiling, lint & test reports
+*.hprof
+lint-results.html
+lint-results.xml
+app/lint-baseline.xml
+
+# System & OS metadata files
 .DS_Store
 Thumbs.db
 Desktop.ini
+ehthumbs.db
 
-# Editor & IDE Directories
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Local build logs
+# Log files and crash dumps
 *.log
+hs_err_pid*
+
+# Package Manager / Workspace caches
+.kotlin/
+.wiremock/
